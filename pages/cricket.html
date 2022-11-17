@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Sports-newsletter website">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest News in Sports">
+<!-- Below are  two stylesheet 
+    1.) The common one which includes common styling like navigation bar ,header etc 
+    which are used for all the pages 
+    2.) cricket.css has styling specific to cricket page-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/cricket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>ESPN - Cricket News</title>
+</head>
+<body>
+    <!-- Main Container which contains all elements  -->
+    <div class="container" id="cricket-container-id">
+        <!-- Common Header and navigation bar for all the pages -->
+        <!-- Header Company Logo  -->
+        <div id="header">
+            <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+            <div id ="font-adjuster"> 
+            <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            </div>
+        <div id="header-logo"> <a href="/index.html">
+            <i class="fa fas "><span> ESPN </span></i> 
+        </div>
+        </div>
+        <!-- Navigation bar which has all the pages to navigate to  -->
+        <nav class="nav" id="nav">
+            <a href=/pages/cricket.html>Cricket</a>
+            <a href=/pages/football.html>Football</a>
+            <a href=/pages/contact.html>Contact</a>
+            <a href=/pages/about.html>About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <!-- Slideshow container -->
+        <!-- Slideshow container contains breaking news from cricket world-->
+        <div class="cricket-main-news">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <!-- First slide   -->
+                <div class="number-text">1 / 2</div>
+                <img src="https://resources.pulse.icc-cricket.com/photo-resources/2022/09/07/14543b14-a2d1-477a-a289-615180e51e4f/GettyImages-993027214.jpg?width=1280&height=720" alt="England Cricket" style="width:100%">
+                <div class="text">
+                    <h3  class ="slide-text">Cricket News | 25 Aug 2022 | </h3>
+                    <p  class ="slide-text"> 
+                        England recall opener for T20 World Cup
+                        <br> Credit: ICC </br>
+                        <a href="https://www.icc-cricket.com/news/2784966"  class ="slide-text">Click here for More
+                        <i class="fa fa-caret-right"></i>
+                        </a>
+                    </p>
+                </div>
+                <!-- Second slide   -->
+                </div>
+                <div class="mySlides fade">
+                <div class="number-text">2 / 2</div>
+                <img src="https://resources.pulse.icc-cricket.com/photo-resources/2022/09/06/84df55c2-a332-4717-8dca-9aa031e56ac0/GettyImages-1399512638.jpg?width=1280&height=720" alt="Bowlers" style="width:100%">
+                <div class="text">
+                    <h3  class ="slide-text">Cricket News | 26 Aug 2022 | </h3>
+                    <p  class ="slide-text"> 
+                        Ponting reveals his top five T20I players
+                        <br> Credit: Craig Vander Galien </br>
+                        <a href="https://www.icc-cricket.com/news/2781744"  class ="slide-text" >Click here for More
+                        <i class="fa fa-caret-right"></i>
+                        </a>
+                    </p>
+                </div>
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            </div>
+        <!-- cricket News Divider -Latest  -->
+        <div class="cricket-news-divider-upper" id ="cricket-news-divider-upper">
+            <button class="topic-btn">
+            <span>Latest Cricket News</span>
+            </button>
+        </div>
+        <!-- All cricket News article have same layout they contain image and description about the event  -->
+        <!-- cricket News article card 1  -->
+        <div class ="card" id ="cricket-news-1">
+            <div class ="card-body">
+            <img class ="card-image" src="https://cdn.readeverything.co/wp-content/uploads/sites/107/2022/09/1352488591-746x372.jpg" alt="England Squad">
+            <h2 class="card-title"> Cricket News |28 Aug 2022|<br> ENGLAND NAME ICC MEN’S T20 WORLD CUP SQUAD</h2>
+            <p class="card-description">England have named their squad for the upcoming ICC Men’s T20 World Cup in Australia, which gets underway in October. Chris Woakes and Mark Wood have recovered from their injuries to boost Jos Buttler’s seam bowling options but Jonny Bairstow will be absent after suffering a freak accident playing golf</p>
+        </div>
+        <a href="https://barmyarmy.com/2022/09/03/england-name-icc-mens-t20-world-cup-squad/" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 2  -->
+        <div class ="card" id ="cricket-news-2">
+            <div class ="card-body">
+            <img class ="card-image" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_960/lsci/db/PICTURES/CMS/345800/345848.4.jpg" alt="Cricket South Africa">
+            <h2 class="card-title">Cricket News |28 Aug 2022|<br> South Africa's survival guide goes out the window as Ben Stokes shows what it takes to seize the day</h2>
+            <p class="card-description">You've got to hand it to England: this Bazball thing sort of works. Even if you don't like it, or what it's called, and you feel it undermines the pillars of patience and pragmatism on which Test cricket is built, you have to admit that it gets things moving. For example, if you had any concerns about this match being drawn when it was reduced to three days, you needn't have.</p>
+        </div>
+        <a href="https://www.espncricinfo.com/story/eng-vs-sa-3rd-test-south-africa-s-survival-guide-out-the-window-as-ben-stokes-shows-what-it-takes-to-seize-the-day-1334278" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 3 -->
+        <div class ="card" id ="cricket-news-3">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242742/ollie-robinson-continued-his-g.jpg" alt="England">
+            <h2 class="card-title">Cricket News |28 Aug 2022|<br> Pacers help England regain advantage</h2>
+            <p class="card-description">While South Africa enjoyed a productive opening session on Day 4 of the third Test at The Oval, England dominated the proceedings post lunch thanks to regular strikes from their pace bowlers. Ben Stokes, Ollie Robinson and Stuart Broad bagged two wickets apiece to leave South Africa at 146/7 at Tea on Sunday.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123795/pacers-help-england-regain-advantage" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 4 -->
+        <div class ="card" id ="cricket-news-4">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242693/steve-smith-registered-his-12t.jpg" alt="Steven Smith">
+            <h2 class="card-title">Cricket News |28 Aug 2022|<br>Smith ton pilots Australia to 267 </h2>
+            <p class="card-description">Steven Smith cracked a brilliant 105 in tricky conditions to power Australia to a healthy total of 267 for 5 in 50 overs in the final ODI of the Chappell-Hadlee series in Cairns.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123790/steve-smith-ton-pilots-australia-to-267-vs-new-zealand" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News Divider -Other cricket News  -->
+        <div class="cricket-news-divider-lower">
+            <button class="topic-btn">
+            <span>Latest Cricket Releases</span>
+            </button>
+        </div>
+        <!-- cricket News article card 5 -->
+        <div class ="card" id ="cricket-news-5">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242682/bumrah-above-and-harshal-bot.jpg" alt="Bumrah">
+            <h2 class="card-title">Cricket News |28 Aug 2022| <br> Bumrah, Harshal set to return for T20 World Cup  </h2>
+            <p class="card-description">Jasprit Bumrah and Harshal Patel are set for a return to the Indian team for the T20 World Cup. It might be a no-brainer that the two most key bowlers of the side would be staging a comeback but central to their return is fitness which, it is believed, has been cleared by them.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123786/bumrah-harshal-set-to-return-for-t20-world-cup" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 6 -->
+        <div class ="card" id ="cricket-news-6">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242617/hayden-will-join-the-side-in-b.jpg" alt="Hayden">
+            <h2 class="card-title">Cricket News |28 Aug 2022| <br>Hayden appointed Pakistan's mentor for 2022 T20 World Cup</h2>
+            <p class="card-description">Matthew Hayden, the former Australian batter, has rejoined the Pakistan men's team as mentor for the upcoming World T20, the Pakistan Cricket Board announced on Friday. The 50-year had previously served as the batting consultant of the team in last year's T20 World Cup where Pakistan reached the semifinals.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123771/hayden-appointed-pakistans-mentor-for-2022-t20-world-cup" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 7 -->
+        <div class ="card" id ="cricket-news-7">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242612/virat-kohli-equalled-ricky-pon.jpg" alt="Kohli">
+            <h2 class="card-title">Cricket News |28 Aug 2022|  <br>Kohli remained in the moment, worked hard and been patient - Rahul </h2>
+            <p class="card-description">On Thursday evening in Dubai, Virat Kohli ended a wait of 1019 days to score his 71st international century - equalling Ricky Ponting's tally - and breaking the long rut he's endured over the last two and a half years. The knock, he'd later admit, had left him a bit shocked as T20 was a format he least expected to break the deadlock with.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123769/asia-cup-virat-kohli-has-remained-in-the-moment-worked-hard-and-been-patient-kl-rahul" class="card-link">Read Full Article</a>
+        </div>
+        <!-- cricket News article card 8 -->
+        <div class ="card" id ="cricket-news-8">
+            <div class ="card-body">
+            <img class ="card-image" src="https://www.cricbuzz.com/a/img/v1/595x396/i1/c242585/its-the-right-decision-for-m.jpg" alt="ECB Women cricket">
+            <h2 class="card-title">Cricket News |28 Aug 2022| <br> 'Emotionally fatigued' Sciver pulls out of India series </h2>
+            <p class="card-description">England's Natalie Sciver has pulled out of the upcoming limited-overs series against India citing the need to focus on her mental health and well being. Amy Jones has been named as the captain for the T20I series in Sciver's absence.</p>
+        </div>
+        <a href="https://www.cricbuzz.com/cricket-news/123765/emotionally-fatigued-sciver-pulls-out-of-india-series" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- Below is the common footer container -->
+        <footer>
+            <!-- A footer container  -->
+              <div class="footer-container">
+                <div class="left-col">
+                  <div id= "footer-logo">
+                  <i class="fas"></i> ESPN 
+                  </div>  
+                  <!-- social media icons from font awesome -->
+                  <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <p class="rights-text">© 2022 Created By team ESPN. All Rights Reserved.</p>
+                </div>
+                <div class="right-col">
+                  <h1>Our Newsletter</h1>
+                  <div class="border"></div>
+                  <p>Enter Your Email to get our news and updates.</p>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="submit-btn" value="submit">
+                  </form>
+                </div>
+              </div>
+          </footer>
+        <!-- end of footer container -->    
+    </div >
+    <!--external javascript is linked here   -->
+    <script src=/assets/js/cricket.js></script> 
+    </body>
+</html>

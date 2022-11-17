@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This head section contains all the invisible information about the page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a sports newsletter">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest News in Sports ">
+    <!-- Below are  two stylesheet 
+    1.) The common one which includes common styling like navigation bar ,header etc 
+    which are used for all the pages 
+    2.) about.css has styling specific to index page-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <!-- external fonts are linked here  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>ESPN - About us</title>
+</head>
+<body>
+    <!-- Main Container which contains all elements  -->
+    <div class="container" id="container-id">
+        <!-- Header  -->
+        <div id="header">
+            <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+            <div id ="font-adjuster"> 
+            <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            </div>
+
+            <div id="header-logo"> 
+            <a href="/index.html">
+            <i class="fa fas"><span> ESPN</span></i> 
+            </div>
+        </div>
+    
+        <nav class="nav" id="nav">
+            <a href=/pages/cricket.html>Cricket</a>
+            <a href=/pages/football.html>Football</a>
+            <a href=/pages/contact.html>Contact</a>
+            <a href=/pages/about.html>About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
+        <div id="cubeContainer">
+            <div id="cubeWrapper">
+                <div class="head">
+                    <h2>We are a team of passionate individuals who want to make an impact in the world of Sports Journalism.</h2>
+                    <h1>Meet our awesome team @ ESPN UK</h1>  
+                </div>
+                <div id="cubes">
+                    <!-- Name ,Job title and Social media contact of a person -->
+                    <div class="cube p2">
+                        <div class="name">
+                            <h1 class="text">Jane Doe</h1>
+                            <p class="text">Senior Editor</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Person 2 -->
+                    <div class="cube p1">
+                        <div class="name">
+                            <h1 class="text">Selena Marsh</h1>
+                            <p class="text">Manager</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Person 3 -->
+                    <div class="cube p3">
+                        <div class="name">
+                            <h1 class="text">John Doe</h1>
+                            <p class="text">Software Engineer</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Person 4 -->
+                    <div class="cube p4">
+                        <div class="name">
+                            <h1 class="text">Blake Butcher</h1>
+                            <p class="text">Senior Analyst</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Person 5 -->
+                    <div class="cube p5">
+                        <div class="name">
+                            <h1 class="text">Rick Johnson</h1>
+                            <p class="text">QA Engineer</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Person 6 -->
+                    <div class="cube p6">
+                        <div class="name">
+                            <h1 class="text">Lily Maxwell</h1>
+                            <p class="text">Content Writer</p>
+                        </div>
+                        <div class="innerBorder"></div>
+                        <div class="darken"></div>
+                        <div class="content">
+                            <ul>
+                                <!-- Social media button using Font Awesome  -->
+                                <li><a href=""><span class="fab fa-twitter"></span></a></li>
+                                <li><a href=""><span class="fab fa-facebook-f"></span></a></li>
+                                <li><a href=""><span class="fab fa-instagram"></span></a></li>
+                                <li><a href=""><span class="fab fa-youtube"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="moreTeam"><a href="#"><span>Meet more of the team</span><span class="fas fa-angle-right"></span></a></div>
+            </div>
+        </div>
+        <!-- Below is the common footer container -->
+        <footer>
+            <!-- A footer container  -->
+              <div class="footer-container">
+                <div class="left-col">
+                  <div id= "footer-logo">
+                  <i class="fas"></i> ESPN 
+                  </div>  
+                  <!-- social media icons from font awesome -->
+                  <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <p class="rights-text">© 2022 Created By team ESPN. All Rights Reserved.</p>
+                </div>
+                <div class="right-col">
+                  <h1>Our Newsletter</h1>
+                  <div class="border"></div>
+                  <p>Enter Your Email to get our news and updates.</p>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="submit-btn" value="submit">
+                  </form>
+                </div>
+              </div>
+          </footer>
+    </div >
+    <!-- JS -->
+    <script src="/assets/js/about.js"></script> 
+</body>
+</html>

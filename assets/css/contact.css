@@ -1,0 +1,182 @@
+/* importing custom font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* Body styling */
+body {
+  font-family: "Poppins", "Inter", sans-serif;
+  margin: 0;
+  background-image: linear-gradient(
+    to left,
+    #787878,
+    #858585,
+    #929292,
+    #9f9f9f,
+    #adadad,
+    #b8b8b8,
+    #c4c4c4,
+    #cfcfcf,
+    #dbdbdb,
+    #e7e7e7,
+    #f3f3f3,
+    #ffffff
+  );
+}
+/*This is the main container/wrapper */
+.container {
+  display: grid;
+  height: 105vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.04fr 0.02fr auto 0.05fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "contact-form"
+    "footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border-radius: 5px;
+}
+
+/* Wrapper for the contact form  */
+.wrapper {
+  position: relative;
+  margin-top: 0.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55em;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #fc5c65;
+  grid-area: contact-form;
+  margin-bottom: 14em;
+}
+/* heading for the contact form  */
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+/* Input field for the contact form  */
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+/* input section*/
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.wrapper textarea {
+  resize: none;
+  height: auto;
+  font-size: 20px;
+}
+/* submit button */
+.wrapper .btn input[type="submit"] {
+  border: 1em;
+  margin-top: 3em;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+  background: #fc5c65;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.head {
+  text-align: center;
+}
+.head h1 {
+  font-weight: 20;
+  position: relative;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px white;
+}
+
+/* Responsive - Mobile devices */
+@media only screen and (max-width: 550px) {
+  .container {
+    height: 205vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.04fr 0.01fr auto 0.01fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "contact-form"
+      "footer";
+  }
+  .wrapper {
+    position: absolute;
+    max-width: 20em;
+    width: 100%;
+    min-height: 20em;
+    margin-top: 10em;
+    margin-bottom: 1em;
+    overflow: scroll;
+  }
+  .wrapper .btn input[type="submit"] {
+    border: 1em;
+    margin-top: 0em;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+    background: #fc5c65;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  .nav a {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .btn {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .submit-btn {
+    margin: 0em;
+    margin-top: 1.2em;
+    margin-bottom: 0.2em;
+  }
+}

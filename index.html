@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Sports-newsletter website">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest Sports News ">
+    <!-- Below are  two stylesheet 
+      1.) The common one which includes common styling like navigation bar ,header etc 
+      which are used for all the pages 
+      2.) index.css has styling specific to index page-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>ESPN - Home</title>
+</head>
+  <body>
+    <!-- Main Container which contains all elements  -->
+    <div class="container" id="container-id">
+      <!-- Common Header and navigation bar for all the pages -->
+        <div id="header">
+          <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+          <div id ="font-adjuster"> 
+            <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+            <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+          </div>
+          <div id="header-logo"> 
+            <a href="/index.html">
+            <i class="fa fas"><span> ESPN </span></i> 
+          </div>
+        </div>
+        <!-- Navigation bar which has all the pages to navigate to  -->
+        <nav class="nav" id="nav">
+          <a href="/pages/cricket.html">Cricket</a>
+          <a href="/pages/football.html">Football</a>
+          <a href="/pages/contact.html">Contact</a>
+          <a href="/pages/about.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <!-- Common Header and navigation bar ends here-->
+        <!-- Latest News divider /heading -->
+        <div class="latest-news-divider">
+          <button class="topic-btn">
+            <span>Latest Sports News</span>
+          </button>
+        </div>
+        <!-- Slideshow containing breaking news at the moment-->
+        <div class="main-news-slideshow">
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="number-text">1 / 3</div>
+              <img src="/assets/images/f1.jpg" alt ="Verstappen F1" style="width:100%">
+              <div class="text">
+                <h3 class ="slide-text">Aug 30 2022 | F1 | Verstappen wins Belgian GP</h3>
+                <p class ="slide-text">  
+                  Red Bull's Max Verstappen comes from starting 14th to win Belgian Grand Prix </br>
+                  <a class ="slide-text" href="https://edition.cnn.com/2022/08/28/motorsport/max-verstappen-belgian-gp-win-f1-spt-intl/index.html">Read More
+                  <i class="fa fa-caret-right"></i>
+                  </a>
+                </p>
+            </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="number-text">2 / 3</div>
+              <img src="/assets/images/nadal.jpg" alt ="Rafael Nadal" style="width:100%">
+              <div class="text">
+                <h3 class ="slide-text" >Aug 29 2022 | Tennis | Nadal starts US open campaign with a Win</h3>
+                <p class ="slide-text">  Rafael Nadal beats Hijikata in spite of dropping the 1st set </br>
+                  <a class ="slide-text" href="https://edition.cnn.com/2022/08/31/tennis/rafael-nadal-rinky-hijikata-us-open-tennis-spt-intl/index.html">Read More
+                  <i class="fa fa-caret-right"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="number-text">3 / 3</div>
+              <img src="/assets/images/rory.jpg" alt ="Rory Mcllroy" style="width:100%">
+              <div class="text"> 
+                <h3 class ="slide-text">Aug 25 2022 | Golf | Mcllroy makes tour championship history</h3>
+                <p class ="slide-text">Mcllroy overturns six-shot deficit at FedEx Cup to make Tour Championship history </br>
+                  <a class ="slide-text" href="https://edition.cnn.com/2022/08/29/golf/rory-mcilroy-tour-championship-fedex-cup-spt-spc-intl/index.html">Read More
+                  <i class="fa fa-caret-right"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <!-- The dots/circles for navigating the different slides-->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+        <div id="ticker">
+          <div id="ticker-wrapper">
+            <ul id="ticker-wrapper-inner">
+              <!-- Mixed news - All leading sports -->
+              <li>
+                <figure>
+                  <img src=/assets/images/paris.jpg alt="olympics-paris" />
+                </figure>
+                <h3 class ="ticker-text">Aug 20, 2022 | Sports</h3>
+                  <p class ="ticker-text"> Paris Olympics 2024: Ticket Sales to Open In December
+                    <br> 
+                    <a class ="ticker-text" href="https://www.forbes.com/sites/ceciliarodriguez/2022/08/14/paris-olympics-2024-want-to-go--tickets-sales-open-in-december/?sh=4e04aed64161">Read More <i class="fas fa-angle-double-right"></i></a>
+                  </p> 
+                
+              </li>
+              <li>
+                <figure>
+                  <img src=/assets/images/chess.jpg alt="chess-board" />
+                </figure>
+                <h3 class ="ticker-text">Aug 18, 2022 | Chess</h3>
+                <p class ="ticker-text"> Chess is now a money game and Magnus Carlsen isn't the only one winning
+                    <br>
+                    <a class ="ticker-text" href="https://edition.cnn.com/2021/12/11/sport/chess-money-game-magnus-carlsen-intl/index.html">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+              <li>
+                <figure>
+                  <img src=/assets/images/loh.jpg alt="loh-kean" />
+                </figure>
+                <h3 class ="ticker-text">Aug 15, 2022 | Badminton</h3>
+                <p class ="ticker-text">Loh Kean Yew bounces back from world c'ships disappointment with 1st round win at Japan Open
+                    <br> <a class ="ticker-text" href="https://www.straitstimes.com/sport/badminton-loh-kean-yew-bounces-back-from-world-cships-disappointment-with-1st-round-win-at-japan-open">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+              <li>
+                <figure>
+                <img src=/assets/images/wwe.jpg alt="WWE logo" />
+                </figure>
+                <h3 class ="ticker-text">Aug 10, 2022 | Wrestling</h3>
+                <p class ="ticker-text"> WWE Hall Of Famer Thinks Undertaker's WrestleMania Streak Should Never Have Been Broken
+                    <br><a class ="ticker-text" href="https://www.wrestlinginc.com/983487/wwe-hall-of-famer-thinks-undertakers-wrestlemania-streak-should-never-have-been-broken/">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+              <li>
+                <figure>
+                <img src=/assets/images/conor.jpg alt="conor mcgregor" />
+                </figure>
+                <h3 class ="ticker-text">Aug 10, 2022 | UFC</h3>
+                <p class ="ticker-text"> Conor McGregor provides update on UFC return as star prepares to shoot movie
+                  <br><a class ="ticker-text" href="https://www.mirror.co.uk/sport/other-sports/mma/conor-mcgregor-next-ufc-fight-27941507">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p>
+              </li>
+              <li>
+                <figure>
+                <img src=/assets/images/snooker.jpg alt="snooker" />
+                </figure>
+                <h3 class ="ticker-text">Aug 8, 2022 | Snooker</h3>
+                <p class ="ticker-text"> Star-studded field for snooker's Hong Kong masters 
+                  <br><a class ="ticker-text" href="https://wst.tv/star-studded-field-for-snookers-hong-kong-masters/">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p>
+              </li>
+              <li>
+                <figure>
+                  <img src=/assets/images/paris.jpg alt="olympics-paris" />
+                </figure>
+                <h3 class ="ticker-text">Aug 20, 2022 | Sports</h3>
+                  <p class ="ticker-text"> Paris Olympics 2024: Ticket Sales to Open In December
+                    <br> 
+                    <a class ="ticker-text" href="https://www.forbes.com/sites/ceciliarodriguez/2022/08/14/paris-olympics-2024-want-to-go--tickets-sales-open-in-december/?sh=4e04aed64161">Read More <i class="fas fa-angle-double-right"></i></a>
+                  </p> 
+                
+              </li>
+              <li>
+                <figure>
+                  <img src=/assets/images/chess.jpg alt="chess-board" />
+                </figure>
+                <h3 class ="ticker-text">Aug 18, 2022 | Chess</h3>
+                <p class ="ticker-text"> Chess is now a money game and Magnus Carlsen isn't the only one winning
+                    <br>
+                    <a class ="ticker-text" href="https://edition.cnn.com/2021/12/11/sport/chess-money-game-magnus-carlsen-intl/index.html">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+              <li>
+                <figure>
+                  <img src=/assets/images/loh.jpg alt="loh-kean" />
+                </figure>
+                <h3 class ="ticker-text">Aug 15, 2022 | Badminton</h3>
+                <p class ="ticker-text">Loh Kean Yew bounces back from world c'ships disappointment with 1st round win at Japan Open
+                    <br> <a class ="ticker-text" href="https://www.straitstimes.com/sport/badminton-loh-kean-yew-bounces-back-from-world-cships-disappointment-with-1st-round-win-at-japan-open">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+              <li>
+                <figure>
+                <img src=/assets/images/wwe.jpg alt="WWE logo" />
+                </figure>
+                <h3 class ="ticker-text">Aug 10, 2022 | Wrestling</h3>
+                <p class ="ticker-text"> WWE Hall Of Famer Thinks Undertaker's WrestleMania Streak Should Never Have Been Broken
+                    <br><a class ="ticker-text" href="https://www.wrestlinginc.com/983487/wwe-hall-of-famer-thinks-undertakers-wrestlemania-streak-should-never-have-been-broken/">Read More <i class="fas fa-angle-double-right"></i></a>
+                </p> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- This is a divider to indicate the start of cricket News  -->
+        <div class="cricket-news-divider ">
+          <button class="topic-btn">
+            <span>Cricket News</span>
+          </button>
+        </div>
+        <!-- cricket content card 1  -->
+        <div class="cricket-content card" id= cricket-content-1>
+            <div class="wrapper">
+              <div class="header">
+                <div class="date">
+                  <span class="day">21</span>
+                  <span class="month">Aug</span>
+                  <span class="year">2022</span>
+                </div>
+                <ul class="menu-content">
+                  <li>
+                    <a href="#" class="far fa-bookmark"></a>
+                  </li>
+                  <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                  <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+                </ul>
+              </div>
+              <!-- news article  -->
+              <div class="data">
+                <div class="content">
+                  <h3 class="title">Cricket | Ashes </h3>
+                  <p class="detail">Anderson and Broad targeting 2023 Ashes: Stokes</p>
+                  <a href="https://www.cricket.com.au/news/james-anderson-and-stuart-broad-targeting-2023-home-ashes-series-according-to-ben-stokes/2022-09-08" class="button">Read more</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- cricket content card 2  -->
+        <div class="cricket-content card" id= cricket-content-2>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <!-- Date section of the article card  -->
+              <div class="date">
+                <span class="day">22</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            </div>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Cricket | T20 WC </h3>
+                <p class="detail">Michael Clarke shares T20 World Cup predictions on Trophy Tour</p>
+            
+                <a href="https://www.cricketworld.com/michael-clarke-shares-t20-world-cup-predictions-on-trophy-tour/81432.htm" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cricket content card 3  -->
+        <div class="cricket-content card" id= cricket-content-3>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <!-- Date section of the article card  -->
+              <div class="date">
+                <span class="day">24</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            </div>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Cricket | India</h3>
+                <p class="detail">Kohli reflects on tough times after ending century drought </p>
+                <a href="https://www.icc-cricket.com/news/2786402" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This is a divider to indicate the start of football News  -->
+        <div class="football-news-divider">
+            <button class="topic-btn">
+              <span>Football News</span>
+            </button>
+        </div>
+        <!-- These are the four football news cards created to host image and brief description of the footballs news 
+        This also contains dates and social media buttons  -->
+        <!-- footballs content card 1  -->
+        <div class="footballs-content card" id= footballs-content-1>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <!-- Date section of the article card  -->
+              <div class="date">
+                <span class="day">15</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Football | UCL</h3>
+                <p class="detail">Erling Haaland stars as Man City kick start UCL campaign in style</p>
+                <a href="https://www.thestatesman.com/sports/erling-haaland-stars-man-city-ucl-campaign-1503108754.html" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- footballs content card 2  -->
+        <div class="footballs-content card" id= footballs-content-2>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <div class="date">
+                <!-- Date section of the article card  -->
+                <span class="day">17</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            </div>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Football | Ligue 1</h3>
+                <p class="detail">Neymar opens up about Lionel Messi’s time at PSG: “He’s improving now, feels at home”</p>
+              
+                <a href="https://barcauniversal.com/neymar-opens-up-about-lionel-messis-time-at-psg-hes-improving-now-feels-at-home/" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footballs content card 3  -->
+        <div class="footballs-content card" id= footballs-content-3>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <div class="date">
+                <!-- Date section of the article card  -->
+                <span class="day">21</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            </div>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Football | UCL</h3>
+                <p class="detail">Barcelona and Lewandowski can take down Bayern Munich</p>
+          
+                <a href="https://www.barcablaugranes.com/2022/9/11/23347349/barcelona-and-lewandowski-can-take-down-bayern-munich" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footballs content card 4  -->
+        <div class="footballs-content card" id= footballs-content-4>
+          <!-- wrapper for the article card  -->
+          <div class="wrapper">
+            <div class="header">
+              <!-- Date section of the article card  -->
+              <div class="date">
+                <span class="day">24</span>
+                <span class="month">Aug</span>
+                <span class="year">2022</span>
+              </div>
+              <!-- social media and bookmark icons from font awesome  -->
+              <ul class="menu-content">
+                <li>
+                  <a href="#" class="far fa-bookmark"></a>
+                </li>
+                <li><a href="#" class="far fa-heart"><span>18</span></a></li>
+                <li><a href="#" class="far fa-comment"><span>3</span></a></li>
+              </ul>
+            </div>
+            <!-- news article  -->
+            <div class="data">
+              <div class="content">
+                <h3 class="title">Football | EPL</h3>
+                <p class="detail">Jurgen Klopp can 'reinvent' Liverpool with tactical ploy he perfected at Borussia Dortmund</p>
+                <a href="https://www.liverpoolecho.co.uk/sport/football/football-news/jurgen-klopp-reinvent-liverpool-breaking-24983110" class="button">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Common Footer-->
+        <footer>
+          <!-- A footer container  -->
+            <div class="footer-container">
+              <div class="left-col">
+                <div id= "footer-logo">
+                <i class="fas"></i> ESPN 
+                </div>  
+                <!-- social media icons from font awesome -->
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rights-text">© 2022 Created By team ESPN. All Rights Reserved.</p>
+              </div>
+              <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter Your Email to get our news and updates.</p>
+                <form action="" class="newsletter-form">
+                  <input type="text" class="txtb" placeholder="Enter Your Email">
+                  <input type="submit" class="submit-btn" value="submit">
+                </form>
+              </div>
+            </div>
+        </footer>
+    </div >
+    <!-- Javascript -->
+    <script src="/assets/js/script.js"></script> 
+</body>
+</html>

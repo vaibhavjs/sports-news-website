@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This head section contains all the invisible information about the page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a sports newsletter website">
+    <meta name="author" content="UOL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="Latest News in Sports ">
+    <!-- Below are  two stylesheet 
+    1.) The common one which includes common styling like navigation bar ,header etc 
+    which are used for all the pages 
+    2.) footballs.css has styling specific to index page-->
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href=/assets/css/football.css>
+    <!-- External Fonts are added here  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>ESPN - Football News</title>
+</head>
+<body>
+    <!-- Main Container which contains all elements  -->
+    <div class="container" id="container-id">
+        <!-- Common Header and navigation bar for all the pages -->
+        <!-- Header starts here  -->
+        <div id="header">
+            <!-- Three font buttons are added so that user can adjust font size -small medium and large  -->
+            <div id ="font-adjuster"> 
+                <a id ="s-font" href="javascript:smallFontSize();"><i class="fas fa-font"></i></a>
+                <a id ="m-font" href="javascript:mediumFontSize();"><i class="fas fa-font"></i></a>
+                <a id ="l-font" href="javascript:largeFontSize();"><i class="fas fa-font"></i></a>
+            </div>
+            <!-- Comapany Logo -->
+            <div id="header-logo"> 
+                <a href="/index.html">
+                <i class="fa fas"><span>ESPN</span></i> 
+            </div>
+        </div>
+        <!-- Header ends here  -->
+    <!-- Navigation bar which has all the pages to navigate to  -->
+        <nav class="nav" id="nav">
+            <a href=/pages/cricket.html>Cricket</a>
+            <a href=/pages/football.html>Football</a>
+            <a href=/pages/contact.html>Contact</a>
+            <a href=/pages/about.html>About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunc()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    <!-- Common Header and navigation bar ends here-->
+    <!-- Slideshow container -->
+        <div class="footballs-main-news">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <!-- First slide of main football news -->
+            <div class="number-text">1 / 3</div>
+            <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blte6ceacaef08086eb/631cc5d50c7ca54c537c8c07/GettyImages-1243099189.jpg?quality=80&format=pjpg&auto=webp&width=1000" alt ="Neymar" style="width:100%">
+            <!-- News description goes here -->
+            <div class="text">
+                <h3 class="slide-text"> Football News </h3>
+                    <br>
+                    <p class="slide-text">
+                        'One of the best players on the planet' - Galtier heaps praise on 'great professional' Neymar after lightning start to season <br>
+                        <a class="slide-text" href="https://www.goal.com/en-in/news/one-of-the-best-players-on-the-planet-galtier-heaps-praise-on-great-professional-neymar-after-lightning-start-to-season/blt4252eeab86ca9bc7">Read More
+                        <i class="fa fa-caret-right"></i>
+                        </a>
+                    </p>
+            </div>
+            </div>
+            <div class="mySlides fade">
+            <!-- Second slide of main football news -->
+            <div class="number-text">2 / 3</div>
+            <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltd5a533a43f5367c2/631dc1d577930235e422dbf2/Erling_Haaland_Manchester_City_2022-23.jpg?quality=80&format=pjpg&auto=webp&width=1000" alt ="Haaland" style="width:100%">
+            <!-- News description goes here -->
+            <div class="text">
+                <h3 class="slide-text"> Football News </h3>
+                <br >
+                <p class="slide-text">
+                    Haaland's Premier League domination: Breaking down the Man City striker's goals so far</br>
+                    <a class="slide-text" href="https://www.goal.com/en-in/lists/haaland-premier-league-domination-man-city-goals/bltdd7d471c868dec7f">Read More
+                    <i class="fa fa-caret-right"></i>
+                    </a>
+                </p>
+            </div>
+            </div>
+            <div class="mySlides fade">
+            <!-- Third  slide of main football news -->
+            <div class="number-text">3 / 3</div>
+            <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt9a0595345b08c74a/63108f32b200ed1cd56b0bd2/goal---web-two-way-split--27dfbfdd-70da-403f-bf96-1e328081620a.jpeg?quality=80&format=pjpg&auto=webp&width=1000" alt="Laliga" style="width:100%">
+            <!-- News description goes here -->
+            <div class="text">                   
+                <h3 class="slide-text"> Football News </h3>
+                <br>
+                <p class="slide-text">La Liga top scorers 2022-23: Benzema, Lewandowski & players in Pichichi race </br>
+                <a class="slide-text" href="https://www.goal.com/en-in/news/la-liga-top-scorers-2022-23/blt9ea523e8d70138b5">Read More
+                <i class="fa fa-caret-right"></i>
+                </a>
+                </p>
+            </div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+        <!-- This is a divider to indicate the start of New footballs Releases  -->
+        <div class="latest-football-news-divider">
+            <button class="topic-btn">
+            <span>Latest News</span>
+            </button>
+        </div>
+        <!-- football release article card 1  -->
+        <div class ="card" id ="footballs-release-1">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt525de50f6a07d099/62b2b62d50e5112f728267a0/Fabio_Vieira_Arsenal_2022-23.jpg?quality=80&format=pjpg&auto=webp&width=1000" alt="Arsenal">
+            <h2 class="card-title">Football News <br> Arsenal's secret weapon? Vieira gives fans a tantalising glimpse of the future</h2>
+            <p class="card-description">Arsenal fans have had to wait a long time to see Fabio Vieira, the £30-million summer signing from Porto, make his first start for the club.
+                But their patience was rewarded on Thursday evening when he finally lined up from the start as the Gunners got their Europa League campaign underway with a 2-1 win over FC Zurich in Switzerland and it was an impressive first showing from Vieira, who produced an eye-catching performance during his 69 minutes on the pitch. </p>
+        </div>
+        <a href="https://www.goal.com/en-in/news/arsenal-secret-weapon-vieira-tantalising-glimpse-future/blt124bf6bc4484767a" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- football release article card 2  -->
+        <div class ="card" id ="footballs-release-2">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc650b03bab4d6e5d/631c9a35f92e5a47422b1210/PL.jpeg?quality=80&format=pjpg&auto=webp&width=1000" alt="EPL">
+            <h2 class="card-title">Football News <br>The ultimate Premier League review: Haaland, Gabriel Jesus & the best players so far </h2>
+            <p class="card-description">As the Premier League pauses to reflect on the life of Queen Elizabeth II, GOAL has a look at some of the best performing players so far
+                Six games have come and gone in the 2022-23 Premier League season and what a rollercoaster we have had so far. We've seen the lot - a 9-0 hammering, sensational comebacks and we even got a sequel to one of the most entertaining Premier League games in history with 'Battle of the Bridge II' between Chelsea and Tottenham.</p>
+        </div>
+        <a href="https://www.goal.com/en-in/lists/premier-league-review-haaland-gabriel-jesus-best-players-so-far/blt3e4bd7b29f4a8b40" class="card-link">Read Full Article</a>
+        </div>
+       
+        <!-- football release article card 3  -->
+        <div class ="card" id ="footballs-release-3">
+            <div class ="card-body">
+                <video width=100% height=auto controls>
+                    <source src="/assets/video/lewa-ht.mp4" type="video/mp4" alt ="Lewandowski"> 
+                </video> 
+            <h2 class="card-title">Football News <br> Will Lewandowski succeed at FC Barcelona?</h2>
+            <p class="card-description">In the daily evening show - Football Extra, all the pundits discuss about Robert Lewandowski's recent form & talk about if he's capable of repeating his Bayern Munich stats with Barcelona. They mainly discuss if he can manage to score 40+ goals this season after Joining FC Barcelona which clearly is a team in transition.</p>
+        </div>
+        <a href="https://footballbook.com/marvel/news/marvel-releases-x-men-inferno-trailer/" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- This is a divider to indicate the start of latest footballs News  -->
+        <div class="latest-footballs-releases-divider">
+            <button class="topic-btn">
+            <span>Weekly Football News</span>
+            </button>
+        </div>
+    
+        <!-- football news article card 1  -->
+        <div class ="card" id ="footballs-news-1">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltec49a334fe83098a/631cd10f4c449f32f39ce11f/Safeimagekit-resized-imgpng.png?quality=80&format=pjpg&auto=webp&width=1000" alt="De Jong">
+            <h2 class="card-title">Football News<br>De Jong belongs! Barcelona winners, losers and ratings from well-rounded win over Cadiz</h2>
+            <p class="card-description">
+                Barcelona moved to the top of the La Liga table with a 4-0 win over Cadiz on Saturday.
+                Goals from Frenkie de Jong, Robert Lewandowski, Ansu Fati and Ousmane Dembele temporarily pushed the Blaugrana past Real Madrid at the summit of the Spanish top flight - though their rivals have a game in hand.</p>
+        </div>
+        <a href="https://www.goal.com/en-in/lists/de-jong-belongs-barcelona-winners-losers-ratings-cadiz/blt0dff451b63f4002d" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- football news article card 2  -->
+        <div class ="card" id ="footballs-news-2">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt71e4c1a00b0a0848/6318897ba049d62d0486de9b/AMAZON_CARTEL_ENG.jpg?quality=80&format=pjpg&auto=webp&width=1000" alt="Atletico Madrid">
+            <h2 class="card-title">Football News<br>Atletico Madrid 'Another Way of Living' documentary</h2>
+            <p class="card-description">Atletico Madrid have been established as a force to reckon with in European football under the guidance of Diego Simeone. The Argentine manager has been able to break the duopoly of Real Madrid and Barcelona in Spanish football by giving stiff competition to the two traditional giants. </p>
+        </div>
+        <a href="https://www.goal.com/en-in/news/atletico-madrid-another-way-of-living-documentary-where-to-watch-trailer-about/blte8f5b3ff7794335a" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- football news article card 3  -->
+        <div class ="card" id ="footballs-news-3">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta009c217239da2b2/630daed31cca4d454f0d5c4b/GettyImages-1416417117.jpg?quality=80&format=pjpg&auto=webp&width=1000" alt="Bayern">
+            <h2 class="card-title">Football News<br>Bayern Munich chief denies Kane transfer talks as record-breaker Tel hailed as Europe's best striker talent</h2>
+            <p class="card-description">WHAT HAPPENED? The Bundesliga champions reluctantly agreed to the sale of Robert Lewandowski over the summer, leaving them short of a proven No.9. There has been talk of a raid being launched on Spurs for England captain Kane in 2023, as he would be approaching the final year of his contract at that point, but no interest from any of the parties involved has been sounded out as yet.</p>
+        </div>
+        <a href="https://www.goal.com/en-in/news/bayern-munich-kane-transfer-tel-europe-best-striker-talent/bltb5977c57ed9ee8b6" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- football news article card 4  -->
+        <div class ="card" id ="footballs-news-4">
+            <div class ="card-body">
+            <img class ="card-image" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta638517e55d2b9e4/631dfcaf1ca75a39b090766b/goal---web_three-way-split-50be483f-3bb4-4505-8a25-4f536b461115.jpeg?quality=80&format=pjpg&auto=webp&width=1000" alt="Raphinha">
+            <h2 class="card-title">Football News<br>Advised by Neymar & congratulated by Ronaldinho - Why Raphinha made €65m Barcelona transfer</h2>
+            <p class="card-description">WHAT HAPPENED? The Brazil international completed a €65 million (£57m/$66m) switch to Camp Nou from Leeds during the summer window, with interest from Chelsea ignored that would have kept him in the Premier League. He is following in illustrious footsteps with La Liga giants, with a couple of fellow countrymen looked to for inspiration and advice. </p>
+        </div>
+        <a href="https://www.goal.com/en-in/news/neymar-ronaldinho-why-raphinha-65m-barcelona-transfer/blt9b8d830d16fe0ad8" class="card-link">Read Full Article</a>
+        </div>
+
+        <!-- Below is the common footer container -->
+        <footer>
+            <!-- A footer container  -->
+              <div class="footer-container">
+                <div class="left-col">
+                  <div id= "footer-logo">
+                  <i class="fas"></i> ESPN 
+                  </div>  
+                  <!-- social media icons from font awesome -->
+                  <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <p class="rights-text">© 2022 Created By team ESPN. All Rights Reserved.</p>
+                </div>
+                <div class="right-col">
+                  <h1>Our Newsletter</h1>
+                  <div class="border"></div>
+                  <p>Enter Your Email to get our news and updates.</p>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="submit-btn" value="submit">
+                  </form>
+                </div>
+              </div>
+          </footer>
+    </div >
+    <!-- Javascript  -->
+    <script src=/assets/js/football.js></script> 
+</body>
+</html>
